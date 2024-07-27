@@ -39,30 +39,158 @@
     </nav>
 
 	<!-- hero section -->
-	 <div class="hero">
-		<div class="menu-bar" id="menuBar" >
-			<div class="menu-item cursor-pointer" id="menuItem">
-				<img src="./assets/home.svg" alt="home">
-				<p>Home</p>
+	<div class="hero flex">
+		<div class="menu-bar  cursor-pointer" id="toggleMenuBar">
+			<div class="menu-section">
+				<div class="menu-item">
+					<img src="./assets/home.svg" alt="">
+					<p>Home</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/shorts.svg" alt="">
+					<p>Shorts</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/subscriptions.svg" alt="">
+					<p>Subscription</p>
+				</div>
+				<div class="menu-item toggle-hide hide">
+					<img src="./assets/you.svg" alt="">
+					<p>You</p>
+				</div>
 			</div>
-			<div class="menu-item cursor-pointer"  id="menuItem">
-				<img  src="./assets/shorts.svg" alt="home">
-				<p>Shorts</p>
+			<div class="menu-section toggle-hide">
+				<div class="menu-section-title menu-item">
+					<h4>You</h4> 
+					<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" ><path d="M4.97 12.65 9.62 8 4.97 3.35l.71-.71L11.03 8l-5.35 5.35-.71-.7z"></path></svg>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/history.svg" alt="">
+					<p>History</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/playlists.svg" alt="">
+					<p>Playlists</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/watch-later.svg" alt="">
+					<p>Watch Later</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/liked-videos.svg" alt="">
+					<p>Liked Videos</p>
+				</div>
 			</div>
-			<div class="menu-item cursor-pointer">
-				<img src="./assets/subscriptions.svg" alt="home">
-				<p>Subscriptions</p>
+			<div class="menu-section toggle-hide">
+				<div class="menu-section-title menu-item">
+					<h4>Explore</h4> 
+					<!-- <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" ><path d="M4.97 12.65 9.62 8 4.97 3.35l.71-.71L11.03 8l-5.35 5.35-.71-.7z"></path></svg> -->
+				</div>
+				<div class="menu-item">
+					<img src="./assets/trending.svg" alt="">
+					<p>Trending</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/music.svg" alt="">
+					<p>Music</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/movies-and-tv.svg" alt="">
+					<p>Movies & TV</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/gaming.svg" alt="">
+					<p>Gaming</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/news.svg" alt="">
+					<p>News</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/sports.svg" alt="">
+					<p>Sport</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/learning.svg" alt="">
+					<p>Learning</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/fashion-and-beauty.svg" alt="">
+					<p>Fashion & beauty</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/podcasts.svg" alt="">
+					<p>Podcast</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/playables.svg" alt="">
+					<p>Playables</p>
+				</div>
 			</div>
-			<div class="menu-item cursor-pointer">
-				<img src="./assets/you.svg" alt="home">
-				<p>You</p>
+			<div class="menu-section toggle-hide">
+				<div class="menu-section-title menu-item">
+					<h4>More from YouTube</h4> 
+					<!-- <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" ><path d="M4.97 12.65 9.62 8 4.97 3.35l.71-.71L11.03 8l-5.35 5.35-.71-.7z"></path></svg> -->
+				</div>
+				<div class="menu-item">
+					<img  style="filter: none; height: 2.5rem; width: 2.5rem;" src="./assets/yt-premium.svg" alt="">
+					<p>YouTube Premium</p>
+				</div>
+				<div class="menu-item">
+					<img style="filter: none; height: 2.5rem; width: 2.5rem;" src="./assets/yt-music.svg" src="./assets/yt-music.svg" alt="">
+					<p>YouTube Music</p>
+				</div>
+				<div class="menu-item">
+					<img style="filter: none; height: 2.5rem; width: 2.5rem;" src="./assets/yt-kids.svg" src="./assets/yt-kids.svg" alt="">
+					<p>YouTube Kids</p>
+				</div>
+			</div>
+			<div class="menu-section toggle-hide" style="margin-top: 1rem;">
+				<div class="menu-item">
+					<img src="./assets/settings.svg" alt="">
+					<p>Settings</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/report.svg" alt="">
+					<p>Report history</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/help.svg" alt="">
+					<p>Help</p>
+				</div>
+				<div class="menu-item">
+					<img src="./assets/feedback.svg" alt="">
+					<p>Send feedback</p>
+				</div>
+			</div>
+			<div class="menu-extras toggle-hide" style="margin-top: 1rem;">
+				<a href="#">About</a>
+				<a href="#">Press</a>
+				<a href="#">Copyright</a>
+				<a href="#">Contact us</a>
+				<a href="#">Creator</a>
+				<a href="#">Advertise</a>
+				<a href="#">Developers</a>
+				<br>
+				<br>
+				<a href="#">Terms</a>
+				<a href="#">Privacy</a>
+				<a href="#">Policy & Safety</a>
+				<a href="#">How YouTube works</a> <br>
+				<a href="#">Test new features</a>
+				<br>
+				<br>
+				<span>© 2024 Google LLC</span>
 			</div>
 		</div>
+	 
+	 <!-- main containt -->
 		<div class="container">
-			<h1>I am container</h1>
+			<div class="quick-btns">
+				
+			</div>
 		</div>
 	 </div>
-
 </body>
 <script src="./script.js"></script>
 </html>

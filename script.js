@@ -1,11 +1,9 @@
-const menuBar = document.getElementById("menuBar");
-const menuItems = document.querySelectorAll(".menu-item")
+const toggleHideElements = document.querySelectorAll(".toggle-hide");
+const toggleMenuBar = document.getElementById("toggleMenuBar");
 
 function toggleMenu() {
-    menuBar.classList.toggle("expanded-menu-bar")
-    // menuBar.classList.toggle("expanded-menu-item")
-    menuItems.forEach(function(menuItem) {
-        menuItem.classList.toggle("expanded-menu-item")
-    })
-
+    toggleHideElements.forEach(function (toggleHideElement) {
+        toggleHideElement.classList.toggle("hide");
+    });
+    toggleMenuBar.classList.toggle("small-menu-bar")
 }
