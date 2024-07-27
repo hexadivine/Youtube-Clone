@@ -8,8 +8,6 @@
 
 html {
   font-size: 62.8%;
-  transition: all 1s ease-in-out;
-
 }
 
 body {
@@ -120,7 +118,8 @@ nav {
 
 .menu-bar {
   /* background-color: darkblue; */
-  width: 20rem;
+  min-width: 20rem;
+  max-width: 20rem;
   padding-right: 3rem;
   padding-left: 1rem;
   height: calc(100vh - 6.8rem);
@@ -181,9 +180,17 @@ nav {
   margin-left: 1rem;
 }
 
+.menu-bar::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.menu-bar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* designing small menu bar */
 .small-menu-bar {
-  width: 5rem;
+  min-width: 5rem;
   overflow: hidden;
   padding-left: 0;
 
@@ -205,9 +212,45 @@ nav {
   border-bottom: none;
 }
 /* --- end of menubar --- */
+/* main container */
+
+.main-container {
+  width: calc(100% - 26rem);
+  margin-left: 2rem;
+}
+
 /* quick buttons */
 
 
+.quick-btns {
+ overflow-x: scroll;
+ /* gap: 1rem; */
+}
+
+
+.quick-btns::-webkit-scrollbar, .quick-btn::-webkit-scrollbar-thumb {
+  width: 0;
+}
+
+.quick-btn {
+  cursor: pointer;
+  text-wrap:  nowrap;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.quick-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.quick-btn:nth-child(1) {
+  background-color: white;
+  color: #0f0f0f;
+}
 
 /* --- Utility classes --- */
 
@@ -229,17 +272,4 @@ nav {
 
 .show {
   display: block;
-}
-
-::-webkit-scrollbar {
-  visibility: hidden;
-}
-
-::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.1);
-
 }
