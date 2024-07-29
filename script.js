@@ -14,21 +14,18 @@ function toggleMenu() {
 }
 
 function moveLeftQuickBtns() {
-    if(quickBtns.scrollLeft < 310)
-        quickBtns.scrollLeft -= 300;
-    else
-    quickBtns.scrollLeft -= 300;
+    quickBtns.scrollLeft -= 100;
 }
 
 function moveRightQuickBtns() {
-    quickBtns.scrollLeft += 300;
+    quickBtns.scrollLeft += 100;
 }
 
 function toggleSliderBtns() {
-    if (quickBtns.scrollLeft > 300) slideLeftBtn.classList.remove("hide");
+    if (quickBtns.scrollLeft >= 50) slideLeftBtn.classList.remove("hide");
     else slideLeftBtn.classList.add("hide");
 
-    if (quickBtns.scrollLeft + quickBtns.clientWidth > quickBtns.scrollWidth - 300)
+    if (quickBtns.scrollLeft + quickBtns.clientWidth >= quickBtns.scrollWidth - 50)
         slideRightBtn.classList.add("hide");
     else slideRightBtn.classList.remove("hide");
 }

@@ -224,6 +224,8 @@ nav {
  overflow-x: scroll;
  margin-right: 5rem;
  scroll-behavior: smooth;
+ overflow: auto;
+ scrollbar-width: none;
 }
 
 .quick-btns::-webkit-scrollbar, .quick-btn::-webkit-scrollbar-thumb {
@@ -264,6 +266,7 @@ nav {
 
 .slide-left {
   transform: rotate(180deg);
+  margin-left: -1rem;
 }
 
 .slide-right {
