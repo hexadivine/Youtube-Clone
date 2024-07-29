@@ -18,7 +18,7 @@ body {
 }
 /* --- basic styling end --- */
 /* combined styling */
-.menu, .center img, .right img:nth-child(1), .right img:nth-child(2), .menu-bar img{
+.menu, .center img, .right img:nth-child(1), .right img:nth-child(2), .menu-bar img, .quick-btns svg{
   filter: invert();
 }
 
@@ -220,13 +220,11 @@ nav {
 }
 
 /* quick buttons */
-
-
 .quick-btns {
  overflow-x: scroll;
- /* gap: 1rem; */
+ margin-right: 5rem;
+ scroll-behavior: smooth;
 }
-
 
 .quick-btns::-webkit-scrollbar, .quick-btn::-webkit-scrollbar-thumb {
   width: 0;
@@ -247,13 +245,36 @@ nav {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-.quick-btn:nth-child(1) {
+.quick-btn:nth-child(2) {
   background-color: white;
   color: #0f0f0f;
 }
 
-/* --- Utility classes --- */
+.slide-btn {
+  position: absolute;
+  background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 0 1rem 2rem #0f0f0f;
+  z-index: 2;
+  border-radius: 50%;
+}
 
+.slide-left {
+  transform: rotate(180deg);
+}
+
+.slide-right {
+  right: 3rem;
+}
+
+.slide-btn:hover {
+  background-color: rgb(67, 67, 67);
+}
+
+/* --- Utility classes --- */
 .cursor-text {
   cursor: text;
 }
