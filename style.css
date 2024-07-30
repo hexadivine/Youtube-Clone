@@ -230,6 +230,7 @@ nav {
  scrollbar-width: none;
  background-color: #0f0f0f;
  padding-bottom: 1rem;
+ width: calc(100% - 3rem);
 }
 
 .quick-btns::-webkit-scrollbar, .quick-btn::-webkit-scrollbar-thumb {
@@ -257,7 +258,7 @@ nav {
 }
 
 .slide-btn {
-  position: absolute;
+  position: fixed;
   background-color: #0f0f0f;
   display: flex;
   align-items: center;
