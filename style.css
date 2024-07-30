@@ -386,6 +386,11 @@ nav {
     margin-left: auto;
   }
 
+  .center .left img {
+    border: none;
+    background-color: none;
+    border-radius: 0%;
+  }
 
   .mic {
     display: none;
