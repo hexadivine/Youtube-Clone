@@ -316,6 +316,19 @@ nav {
   margin-left: 1.2rem;
 }
 
+.video-info p {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.video-info span {
+  font-size: 1.4rem;
+  color: rgb(156, 156, 156);
+}
+
+.video-info span:n
+
 .video-info span {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -366,6 +379,16 @@ nav {
 
   nav {
     padding: 1rem 1rem;
+    justify-content: start;
+  }
+
+  nav .center {
+    margin-left: auto;
+  }
+
+
+  .mic {
+    display: none;
   }
 
   html {
