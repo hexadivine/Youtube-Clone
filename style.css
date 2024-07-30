@@ -276,6 +276,23 @@ nav {
 .slide-btn:hover {
   background-color: rgb(67, 67, 67);
 }
+/* --- end of quick btns --- */
+/* videos container layout */
+
+.videos-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-rows: repeat(40rem);
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 4rem 2rem
+}
+
+.video-container {
+  height: 40rem;
+  /* width: 40rem; */
+  background-color: red;
+  border: 1rem solid yellow;
+}
 
 /* --- Utility classes --- */
 .cursor-text {
