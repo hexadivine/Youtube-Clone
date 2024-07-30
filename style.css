@@ -228,6 +228,8 @@ nav {
 .suggesion-bar {
  background-color: #0f0f0f;
  padding-bottom: 2rem;
+ position: sticky;
+ top: 6.8rem;
 }
 
 .quick-btns {
@@ -361,14 +363,25 @@ nav {
 
 /* for responsiveness */
 @media (max-width: 800px) {
+
+  nav .center input {
+    display: none;
+  }
+
+  .main-container {
+    margin-left: 0;
+  }
+
   .menu {
     display: none;
   }
-  
+
   .menu-bar {
     height: fit-content;
     position: fixed;
-    top: calc(100vh - 8.12rem);
+    top: unset;
+    bottom: 0;
+    left: 0;
     padding: 0;
     margin: 0;
     max-width: none;
@@ -379,5 +392,7 @@ nav {
 
   .menu-section:nth-child(1) {
     display: flex;  
+    padding: 0;
+    margin: 0;
   }
 }

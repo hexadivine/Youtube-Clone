@@ -53,5 +53,6 @@ if (window.innerWidth <= 1024) {
 }
 
 if (window.innerWidth <= 800) {
-    toggleMenuBar.classList.remove('hide');    
+    toggleMenuBar.classList.remove('hide');   
+    // mainContainer.style.width = '100%';
 }
