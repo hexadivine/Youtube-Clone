@@ -120,12 +120,15 @@ nav {
 
 .menu-bar {
   /* background-color: darkblue; */
+  background-color: #0f0f0f;
   min-width: 20rem;
   max-width: 20rem;
   padding-right: 3rem;
   padding-left: 1rem;
   height: calc(100vh - 6.8rem);
   overflow-y: scroll;
+  position: sticky;
+  top:6.83rem
 }
 
 .menu-section {
@@ -224,16 +227,16 @@ nav {
 /* quick buttons */
 .suggesion-bar {
  background-color: #0f0f0f;
-
+ padding-bottom: 2rem;
 }
 
 .quick-btns {
  overflow-x: scroll;
+ margin: 0 auto;
  scroll-behavior: smooth;
  overflow: auto;
  scrollbar-width: none;
- padding-bottom: 1rem;
- width: calc(100% - 3rem);
+ width: calc(100% - 5rem);
 }
 
 .quick-btns::-webkit-scrollbar, .quick-btn::-webkit-scrollbar-thumb {
@@ -267,7 +270,7 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  box-shadow: 0 0 1rem 1rem #0f0f0f;
+  box-shadow: 0 0 1rem 2rem #0f0f0f;
   z-index: 2;
   border-radius: 50%;
 }
@@ -299,6 +302,8 @@ nav {
 .video-container img:nth-child(1) {
   width: 100%;
   border-radius: 1rem;
+  max-height: 30rem;
+  /* max-width: 15rem; */
 }
 
 .video-infos {
@@ -321,6 +326,7 @@ nav {
 
 .video-menu {
   height: 3.5rem;
+  margin-left: auto;
 }
 
 /* --- Utility classes --- */
@@ -344,7 +350,34 @@ nav {
   display: block;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .sticky {
   position: sticky;
   top:0;
+}
+
+/* for responsiveness */
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  
+  .menu-bar {
+    height: fit-content;
+    position: fixed;
+    top: calc(100vh - 8.12rem);
+    padding: 0;
+    margin: 0;
+    max-width: none;
+    min-width: none;
+    width: 100%;
+    /* left: 10rem; */
+  }
+
+  .menu-section:nth-child(1) {
+    display: flex;  
+  }
 }
