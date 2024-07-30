@@ -10,7 +10,7 @@
 <body>
 
 	<!-- Navbar -->
-    <nav>
+    <nav class="sticky">
 		<div class="left">
 			<div class="menu cursor-pointer" onclick="toggleMenu()">
 				<img src="./assets/bars.svg" alt="menu">
@@ -40,7 +40,7 @@
 
 	<!-- hero section -->
 	<div class="hero flex">
-		<div class="menu-bar  cursor-pointer" id="toggleMenuBar">
+		<div class="menu-bar  cursor-pointer sticky" style="top:6.83rem" id="toggleMenuBar">
 			<div class="menu-section">
 				<div class="menu-item">
 					<img src="./assets/home.svg" alt="">
@@ -186,7 +186,7 @@
 	 
 	 <!-- main containt -->
 		<div class="main-container" id="mainContainer">
-			<div class="quick-btns flex" id="quickBtns" onscroll="toggleSliderBtns()">
+			<div class="quick-btns flex sticky" style="top:6.83rem" id="quickBtns" onscroll="toggleSliderBtns()">
 				<div class="slide-btn slide-left cursor-pointer hide" onclick="moveLeftQuickBtns()" id="slideLeftBtn">
 					<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" ><path d="M4.97 12.65 9.62 8 4.97 3.35l.71-.71L11.03 8l-5.35 5.35-.71-.7z"></path></svg>
 				</div>
@@ -215,19 +215,234 @@
 					<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" ><path d="M4.97 12.65 9.62 8 4.97 3.35l.71-.71L11.03 8l-5.35 5.35-.71-.7z"></path></svg>
 				</div>
 			</div>
-			
+
 			<div class="videos-container">
-				<div class="video-container"></div>
-				<div class="video-container"></div>
-				<div class="video-container"></div>
-				<div class="video-container"></div>
-				<div class="video-container"></div>
-				<div class="video-container"></div>
-				<div class="video-container"></div>
-				<div class="video-container"></div>
-				<div class="video-container"></div>
-				<div class="video-container"></div>
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>How to Make a Perfect Cup of Coffee Every Time</b>
+							<br>
+							<span>Coffee Lovers</span>
+							<br>
+							<span>1.2M views . 2 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>Ultimate Guide to Building a Gaming PC from Scratch</b>
+							<br>
+							<span>Tech Reviews</span>
+							<br>
+							<span>850K views . 3 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>The Best Vegan Recipes for Summer</b>
+							<br>
+							<span>Healthy Eats</span>
+							<br>
+							<span>500K views . 5 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>Top 10 Travel Destinations for 2024</b>
+							<br>
+							<span>Travel Experts</span>
+							<br>
+							<span>2.1M views . 7 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>DIY Home Decor Ideas on a Budget</b>
+							<br>
+							<span>Home Crafts</span>
+							<br>
+							<span>600K views . 10 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>How to Master Chess in 30 Days</b>
+							<br>
+							<span>Chess Masters</span>
+							<br>
+							<span>750K views . 12 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>Exploring the Deep Sea: What We Found</b>
+							<br>
+							<span>Ocean Explorers</span>
+							<br>
+							<span>1.8M views . 15 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>Best Techniques for Learning a New Language Fast</b>
+							<br>
+							<span>Language Learners</span>
+							<br>
+							<span>900K views . 18 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>The Ultimate Guide to Fitness Workouts at Home</b>
+							<br>
+							<span>Fitness Guru</span>
+							<br>
+							<span>1.3M views . 20 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>How to Create Stunning Digital Art</b>
+							<br>
+							<span>Artistry</span>
+							<br>
+							<span>550K views . 22 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>Understanding Cryptocurrency and Blockchain</b>
+							<br>
+							<span>Crypto Insights</span>
+							<br>
+							<span>2.4M views . 25 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>Top 5 DIY Science Experiments for Kids</b>
+							<br>
+							<span>Science Fun</span>
+							<br>
+							<span>400K views . 27 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>Secrets of Effective Public Speaking</b>
+							<br>
+							<span>Speech Coach</span>
+							<br>
+							<span>800K views . 30 days ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>Exploring the World of Vintage Cars</b>
+							<br>
+							<span>Car Enthusiasts</span>
+							<br>
+							<span>1.7M views . 1 month ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
+				
+				<div class="video-container">
+					<img src="https://via.placeholder.com/200x150" alt="">
+					<div class="video-infos flex">
+						<img src="https://via.placeholder.com/50" alt="">
+						<div class="video-info">
+							<b>How to Start Your Own Business Online</b>
+							<br>
+							<span>Entrepreneur Life</span>
+							<br>
+							<span>1M views . 1 month ago</span>
+						</div>
+						<img src="./assets/video-menu.svg" class="invert video-menu" alt="">
+					</div>
+				</div>
 			</div>
+			
 
 		</div>
 	 </div>

@@ -22,7 +22,7 @@ body {
   filter: invert();
 }
 
-.menu img, .right img {
+.menu img, .right img{
   height: 2.5rem;
   width: 2.5rem;
 }
@@ -34,6 +34,8 @@ nav {
     align-items: center;
     padding: 1rem 2.5rem;
     justify-content: space-between;
+    background-color: #0f0f0f;
+
 }
 
 /* left side of navbar */
@@ -222,10 +224,12 @@ nav {
 /* quick buttons */
 .quick-btns {
  overflow-x: scroll;
- margin-right: 5rem;
+ /* margin-right: 5rem; */
  scroll-behavior: smooth;
  overflow: auto;
  scrollbar-width: none;
+ background-color: #0f0f0f;
+ padding-bottom: 1rem;
 }
 
 .quick-btns::-webkit-scrollbar, .quick-btn::-webkit-scrollbar-thumb {
@@ -282,16 +286,37 @@ nav {
 .videos-container {
   margin-top: 2rem;
   display: grid;
-  grid-template-rows: repeat(40rem);
+  /* grid-template-rows: repeat(25rem); */
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  grid-gap: 4rem 2rem
+  grid-gap: 4rem 2rem;
+  padding: 1.6rem;
 }
 
-.video-container {
-  height: 40rem;
-  /* width: 40rem; */
-  background-color: red;
-  border: 1rem solid yellow;
+.video-container img:nth-child(1) {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.video-infos {
+  margin-top: 1.2rem;
+}
+
+.video-info {
+  margin-left: 1.2rem;
+}
+
+.video-info span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.video-infos img:nth-child(1) {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.video-menu {
+  height: 3.5rem;
 }
 
 /* --- Utility classes --- */
@@ -313,4 +338,13 @@ nav {
 
 .show {
   display: block;
+}
+
+.fixed {
+  /* top:0 */
+}
+
+.sticky {
+  position: sticky;
+  top:0;
 }
